@@ -9,6 +9,9 @@ public:
   double p_error;
   double i_error;
   double d_error;
+  int counter;
+  double dp[3] = {1,1,1};
+  double p[3];
 
   /*
   * Coefficients
@@ -41,6 +44,7 @@ public:
   * Calculate the total PID error.
   */
   double TotalError();
+  void Twiddle( double tol );
 };
 
 #endif /* PID_H */
