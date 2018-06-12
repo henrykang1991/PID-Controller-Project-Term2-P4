@@ -2,6 +2,12 @@
 Self-Driving Car Engineer Nanodegree Program
 
 ---
+In PID, P stands for proportional, which means the steer angle is proportional to the cross track error; I stands for integration, which means the steer angle is proportional to the integration of the cross track error over time; D stands for derivative, which means the steer angle is proportional to the change rate of the cross track error. Due the different characteristics of the error terms, the coefficients of P, I D error were set to be 0.1, 0.0001, 1 at the very beginning. Then try to run the simulator with the coefficients. Then change the coefficient of Kp by 0.05, Ki by 0.0001, Kd by 0.5 each time. Finally, with the following coefficient combinations, the car can run full track without getting out to the undrivable area:
+
+## Kp=0.15, Ki=0.0005, Kd=4;
+## Kp=0.2, Ki=0.0005, Kd=3;
+## Kp=0.2, Ki=0.0005, Kd=4;
+
 
 ## Dependencies
 
